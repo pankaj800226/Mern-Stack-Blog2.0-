@@ -1,0 +1,75 @@
+/* Style for the parent container of all blog data */
+.all_blog_data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* Style for each individual blog item */
+.Blog_data {
+  width: calc(63.13% - 0px);
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgb(231, 231, 240);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  .svg {
+    color: black;
+  }
+}
+
+/* Style for blog images */
+.blog_imgs img {
+  margin-top: 10px;
+  width: 100%;
+  height: 70vh;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(6px);
+  }
+}
+
+/* Style for blog post title */
+.Blog_data h1 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Style for blog post city */
+.Blog_data p {
+  margin-bottom: 5px;
+}
+
+/* Style for blog post description */
+.Blog_data p.Description {
+  font-style: italic;
+}
+
+/* Style for blog post date */
+.Blog_data p.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+@media screen and (max-width: 768px) {
+  .blog_imgs img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+}
